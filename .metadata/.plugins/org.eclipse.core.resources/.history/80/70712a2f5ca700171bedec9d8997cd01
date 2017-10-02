@@ -1,0 +1,11 @@
+package basicIO;
+
+import java.io.BufferedReader;
+
+public class CopyLines {
+
+	public static void main(String[] args) {
+		BufferedReader inputStream = null;
+	}
+
+}
