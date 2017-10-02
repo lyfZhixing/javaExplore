@@ -1,0 +1,9 @@
+package basicIO;
+
+public class CopyCharacters {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

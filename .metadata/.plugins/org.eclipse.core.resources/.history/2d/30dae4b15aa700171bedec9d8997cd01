@@ -1,0 +1,39 @@
+package basicIO;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+/**
+ * 用字符流代替字节流的程序，能自动适应本地字符集，并做好国际化准备，这些都不需要程序员做额外的努力
+ * 所有的字符流都是从Reader和Writer继承来的，FileReader和FileWrite专用于处理文件
+ * @author lyf
+ *
+ */
+public class CopyCharacters {
+
+	public static void main(String[] args) throws IOException {
+		FileReader inputStream = null;
+		FileWriter outputStream = null;
+		
+		try {
+			inputStream = new FileReader("C:/Users/落俗/Desktop/xanadu.txt");
+			outputStream = new FileWriter("C:/Users/落俗/Desktop/out.txt");
+			
+			int c = 0;
+			while((c = inputStream.read()) != -1){
+				outputStream.write(c);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally{
+			if(inputStream != null){
+				inputStream.close();
+			}
+			if(outputStream != null){
+				outputStream.close();
+			}
+		}
+	}
+
+}
+                             

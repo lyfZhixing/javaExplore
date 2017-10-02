@@ -1,0 +1,17 @@
+package basicIO;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class CopyCharacters {
+
+	public static void main(String[] args) throws IOException {
+		FileReader inputStream = null;
+		FileWriter outputStream = null;
+		
+		inputStream = new FileReader("C:/Users/落俗/Desktop/xanadu.txt");
+		outputStream = new FileWriter("C:/Users/落俗/Desktop/out.txt");
+	}
+
+}

@@ -1,0 +1,14 @@
+package basicIO;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class CopyCharacters {
+
+	public static void main(String[] args) {
+		FileReader inputStream = null;
+		FileWriter outputStream = null;
+		d
+	}
+
+}
