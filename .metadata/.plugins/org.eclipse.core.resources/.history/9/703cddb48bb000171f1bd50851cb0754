@@ -1,0 +1,6 @@
+package catalina;
+
+public class MyTomcat {
+
+	private int port = 8080;
+}

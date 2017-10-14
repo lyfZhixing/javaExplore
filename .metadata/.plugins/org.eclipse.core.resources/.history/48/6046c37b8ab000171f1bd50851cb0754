@@ -1,0 +1,5 @@
+package http;
+
+public class MyResponse {
+	private OutputStream out;
+}

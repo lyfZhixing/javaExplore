@@ -1,0 +1,9 @@
+package http;
+/**
+ * http请求的封装对象
+ * @author 	lyf
+ * 日期：		2017年10月14日
+ */
+public class MyRequest {
+	
+}

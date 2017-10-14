@@ -1,0 +1,21 @@
+package servlet;
+
+import http.MyRequest;
+import http.MyResponse;
+import http.MyServlet;
+
+public class MyFirstServlet extends MyServlet {
+
+	@Override
+	public void doGet(MyRequest request, MyResponse response) throws Exception {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void doPost(MyRequest request, MyResponse response) throws Exception {
+		// TODO Auto-generated method stub
+
+	}
+
+}

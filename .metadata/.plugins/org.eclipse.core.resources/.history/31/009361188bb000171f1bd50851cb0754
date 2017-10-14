@@ -1,0 +1,10 @@
+package http;
+
+public abstract class MyServlet {
+
+	public void service(MyRequest request,MyResponse response)throws Exception{
+		if("GET".equals(request.getMethod())){
+			doGet(request,response);
+		}
+	}
+}

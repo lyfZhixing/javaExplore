@@ -1,0 +1,27 @@
+package catalina;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+
+public class MyTomcat {
+
+	private int port = 8080;
+	ServerSocket server = null;
+	
+	public MyTomcat(){
+		super();
+	}
+	
+	public MyTomcat(int port){
+		super();
+		this.port = port;
+	}
+	
+	public void start(){
+		try {
+			server = new ServerSocket(port);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

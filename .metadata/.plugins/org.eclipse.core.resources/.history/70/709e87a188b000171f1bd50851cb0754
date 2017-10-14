@@ -1,0 +1,25 @@
+package http;
+
+import java.io.InputStream;
+
+/**
+ * http请求的封装对象
+ * @author 	lyf
+ * 日期：		2017年10月14日
+ */
+public class MyRequest {
+	private String url;		//请求地址
+	private String method;	//请求方法
+	private String params;	//请求参数
+	private InputStream in;	//
+	
+	public MyRequest(){}
+	
+	public MyRequest(InputStream in){
+		//解析http
+		this.in = in;
+		
+	}
+	
+	
+}
