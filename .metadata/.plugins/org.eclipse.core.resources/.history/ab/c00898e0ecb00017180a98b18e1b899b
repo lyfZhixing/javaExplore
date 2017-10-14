@@ -1,0 +1,5 @@
+package myTomcat.http;
+
+public abstract class MyServlet {
+
+}

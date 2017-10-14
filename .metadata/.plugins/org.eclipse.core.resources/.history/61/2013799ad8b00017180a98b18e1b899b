@@ -1,0 +1,5 @@
+package myTomcat.servlet;
+
+public class FirstServlet extends MySevlet{
+
+}

@@ -1,0 +1,6 @@
+package myTomcat.http;
+
+public class MyResponse {
+
+	
+}

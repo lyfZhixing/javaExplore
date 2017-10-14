@@ -1,0 +1,10 @@
+package myTomcat.http;
+
+import java.io.OutputStream;
+
+public class MyResponse {
+
+	private OutputStream out = null;
+	
+	public MyResponse(){};
+}

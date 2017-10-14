@@ -1,0 +1,30 @@
+package myTomcat.http;
+
+import java.io.InputStream;
+import java.util.Map;
+
+/**
+ * http请求封装
+ * @author 	lyf
+ * 日期：		2017年10月14日
+ */
+public class MyRequest {
+	//请求方法
+	private String method;
+	//请求url，不包含参数
+	private String url;
+	//请求参数字符串可能含有&
+	private String params;
+	//将参数映射成Map
+	private Map<String,String> paramsMap;
+	//接受浏览器发送的请求输入流
+	private InputStream in;
+	
+	public MyRequest(){}
+	
+	public MyRequest(InputStream in){
+		this.in = in;
+		Byte[] buffer = new Byte[1024];
+		int length = 0;
+	}
+}

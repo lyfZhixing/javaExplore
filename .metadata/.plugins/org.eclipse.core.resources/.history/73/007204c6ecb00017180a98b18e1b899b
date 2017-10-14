@@ -1,0 +1,19 @@
+package myTomcat.http;
+
+import java.io.IOException;
+import java.io.OutputStream;
+
+public class MyResponse {
+
+	private OutputStream out = null;
+	
+	public MyResponse(){};
+	
+	public MyResponse(OutputStream out){
+		this.out = out;
+	}
+	
+	public void write(String outStr)throws IOException{
+		out.write(outStr.getBytes());
+	}
+}

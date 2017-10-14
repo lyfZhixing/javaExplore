@@ -1,0 +1,16 @@
+package myTomcat.http;
+
+public abstract class MyServlet {
+
+	public void service(MyRequest request,MyResponse response){
+		if()
+	}
+	
+	public void doGet(MyRequest request,MyResponse response){
+		
+	}
+	
+	public void doPost(MyRequest request,MyResponse response){
+		
+	}
+}

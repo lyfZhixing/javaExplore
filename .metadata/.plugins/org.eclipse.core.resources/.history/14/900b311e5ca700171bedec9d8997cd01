@@ -1,9 +1,0 @@
-package basicIO;
-
-public class CopyLines {
-
-	public static void main(String[] args) {
-		BufferReader inputStream = null;
-	}
-
-}

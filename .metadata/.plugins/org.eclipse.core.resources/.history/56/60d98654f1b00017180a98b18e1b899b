@@ -1,0 +1,10 @@
+package myTomcat.catalina;
+
+
+public class MyTomcat {
+
+	private int port = 8080;
+	ServerSocket server = null;
+	
+	
+}

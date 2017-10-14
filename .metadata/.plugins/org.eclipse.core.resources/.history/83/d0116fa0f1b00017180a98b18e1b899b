@@ -1,0 +1,13 @@
+package myTomcat.catalina;
+
+import java.net.ServerSocket;
+import java.util.Properties;
+
+public class MyTomcat {
+
+	private int port = 8080;
+	ServerSocket server = null;
+	//读取配置文件
+	Properties pro = null;
+	
+}

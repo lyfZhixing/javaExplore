@@ -3,4 +3,11 @@
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.nio.file.Paths"/>
+<fullyQualifiedTypeName name="java.net.ServerSocket"/>
+<fullyQualifiedTypeName name="java.net.Socket"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="http.MyRequest"/>
+<fullyQualifiedTypeName name="http.MyResponse"/>
+<fullyQualifiedTypeName name="servlet.MyFirstServlet"/>
 </qualifiedTypeNameHistroy>
