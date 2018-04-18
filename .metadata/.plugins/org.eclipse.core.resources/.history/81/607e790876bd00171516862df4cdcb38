@@ -1,0 +1,20 @@
+package lyf.reflect;
+
+public class ClassLoadAndForName {
+
+	public static void main(String[] args) {
+		System.out.print("classload test:\t");
+		try {
+			Class<?> white = ClassLoader.getSystemClassLoader().loadClass("lyf.reflect.White");
+			//White whiteObj = (White) white.newInstance();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

@@ -1,8 +1,0 @@
-package http;
-
-public abstract class MyServlet {
-
-	public void service()throws Exception{
-		
-	}
-}

@@ -1,0 +1,10 @@
+package lyf.reflect;
+
+public class ClassLoadAndForName {
+
+	public static void main(String[] args) {
+		System.out.println("classload test:");
+
+	}
+
+}

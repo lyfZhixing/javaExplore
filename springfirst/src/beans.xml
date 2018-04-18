@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+           
+    <!-- 设值注入，value赋值给setter方法的参数 -->
+	<bean id="pets" class="lyf.bean.Dog">
+		<property name="name" value="小银"></property>
+	</bean>
+	<!-- 构造注入，value直接赋值给属性 -->
+	<bean id="pets2" class="lyf.bean.Dog">
+		<constructor-arg index="0" value="小银"></constructor-arg>
+	</bean>
+	<!-- 依赖注入的属性设值：空值 -->
+	<bean id="pets3" class="lyf.bean.Dog">
+		<!-- <property name="name">
+			<null/>
+		</property> -->
+		<constructor-arg index="0">
+			<null></null>
+		</constructor-arg>
+	</bean>
+	<!-- 依赖注入的引用属性 -->
+	<!-- 默认本地引用或用local指明 -->
+	<bean id="person" class="lyf.bean.Person">
+		<property name="pets" ref="pets2"></property>
+	</bean>
+	<!-- local -->
+	<bean id="person2" class="lyf.bean.Person">
+		<property name="pets">
+			<ref local="pets2"/>
+		</property>
+	</bean>
+	<!-- bean可以引用外部xml中的属性 -->
+	<bean id="person3" class="lyf.bean.Person">
+		<property name="pets">
+			<ref bean="pets2"/>
+		</property>
+	</bean>
+	<!-- 集合注入 -->
+	<!-- lsit -->
+	<bean id="person4" class="lyf.bean.Person">
+		<property name="list">
+			<list value-type="java.lang.String">
+				<value>小明</value>
+				<value>小白</value>
+				<value>小月</value>
+				<value>小日</value>
+			</list>
+		</property>
+	</bean>
+	<!-- set -->
+	<bean id="person5" class="lyf.bean.Person">
+		<property name="set">
+			<set value-type="int">
+				<value>1</value>
+				<value>2</value>
+				<value>3</value>
+				<value>4</value>
+			</set>
+		</property>
+	</bean>
+	<!-- map -->
+	<bean id="person6" class="lyf.bean.Person">
+		<property name="map">
+			<map key-type="java.lang.Integer" value-type="java.lang.String">
+				<entry key="1">
+					<value>a</value>
+				</entry>
+				<entry key="2">
+					<value>b</value>
+				</entry>
+				<entry key="3">
+					<value>c</value>
+				</entry>
+				<entry key="4">
+					<value>d</value>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	<!-- properties -->
+	<bean id="person7" class="lyf.bean.Person">
+		<property name="properties">
+			<props>
+				<prop key="1">a</prop>
+				<prop key="2">b</prop>
+				<prop key="3">c</prop>
+				<prop key="4">d</prop>
+			</props>
+		</property>
+	</bean>
+</beans>

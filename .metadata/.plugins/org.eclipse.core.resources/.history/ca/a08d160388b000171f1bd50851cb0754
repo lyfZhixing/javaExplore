@@ -1,9 +1,0 @@
-package http;
-/**
- * http请求的封装对象
- * @author 落俗
- *
- */
-public class MyRequest {
-	
-}

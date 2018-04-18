@@ -1,7 +1,0 @@
-package myTomcat.servlet;
-
-import myTomcat.http.MyServlet;
-
-public class FirstServlet extends MyServlet{
-
-}

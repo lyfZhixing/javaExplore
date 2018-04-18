@@ -1,0 +1,23 @@
+package lyf.Fibonacci;
+/**
+ * 0,1,1,2,3,5,8,13找出这个数列的通项公式，编程实现其前50项，每行显示5项，每项用Tab隔开，行尾不要分隔符
+ * 菲波那切数列：F(n+2) = F(n) + F(n+1)
+ * @author 	lyf
+ * 日期：		2017年10月31日
+ */
+public class Fibonacci {
+	public static void main(String[] args) {
+		
+	}
+	
+	public static int fibonacci(int n){
+		int result = 0;
+		if(n == 1){
+			result = 0;
+		}
+		if(n == 3 || n == 2){
+			return 1;
+		}
+		
+	}
+}
