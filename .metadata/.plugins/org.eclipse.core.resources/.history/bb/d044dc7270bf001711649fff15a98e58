@@ -1,6 +1,0 @@
-package hashmap.sort;
-
-public class HashMapSort {
-
-	Map map = new HashMap();
-}
