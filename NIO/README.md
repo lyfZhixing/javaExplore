@@ -10,7 +10,7 @@
         - outChannel.write(byteBuffer);
         - byteBuffer.clear();
     - 依次关管道和流（代码中没写）
-3. `testMapCopy()`：映射内存复制文件，相关api:java.nio.MappedByteBuffer
+3. `testMapCopy()`：映射内存复制文件，相关api:[java.nio.MappedByteBuffer](https://docs.oracle.com/javase/8/docs/api/index.html)
     - FileChannel.open(……)打开通道
     - MapByteBuffer var = fileChannel.map(……)内存映射
     - var.get / put , 内存复制
