@@ -1,6 +1,6 @@
 # NIO 学习
 ## channel 
-`com.lyf.nio.demo1.ChannelTest`主要是根据api写了一些测试用例：
+[com.lyf.nio.demo1.ChannelTest](https://github.com/lyfZhixing/javaExplore/blob/master/NIO/src/main/java/com/lyf/nio/demo1/ChannelTest.java)主要是根据api写了一些测试用例：
 1. `bufferTest()`：缓冲区的分配和常用属性——position、limit、capacity
 2. `testCopy()`：基本的复制文件，其主要的元素包括：
     - 文件输入流`fileInputStream`，文件输出流`fileOutputStream`，文件输入输出管道`in/outChannel`
