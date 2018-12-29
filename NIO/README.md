@@ -10,11 +10,11 @@
         - outChannel.write(byteBuffer);
         - byteBuffer.clear();
     - 依次关管道和流（代码中没写）
-3. `testMapCopy()`：映射内存复制文件，相关api:java.nio.MappedByteBuffer   
-        - FileChannel.open(……)打开通道
-        - MapByteBuffer var = fileChannel.map(……)内存映射
-        - var.get/put,内存复制
+3. `testMapCopy()`：映射内存复制文件，相关api:java.nio.MappedByteBuffer
+    - FileChannel.open(……)打开通道
+    - MapByteBuffer var = fileChannel.map(……)内存映射
+    - var.get / put , 内存复制
 4. `testTransCopy()`：通道传输 in To out /  out From in   相关方法：`transferTo`和`transferFrom`
-        - FileChannel.open(……)
-        - in To out / out From in(直接通道传输)
+    - FileChannel.open(……)
+    - in To out / out From in(直接通道传输)
 5. `testRandomCopy()`：分散读取，聚集写入，将通道中的数据分散到多个缓冲区中（ByteBuffer[]） ，将多个缓冲区中的数据聚集到通道中
