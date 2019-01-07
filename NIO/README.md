@@ -6,6 +6,11 @@
 3. 内存映射文件([com.lyf.nio.demo1.ChannelTest](https://github.com/lyfZhixing/javaExplore/blob/master/NIO/src/main/java/com/lyf/nio/demo1/ChannelTest.java) .testMapCopy())
 4. 文件加锁机制
 ## channel 
+channel通道是一种用于磁盘文件的抽象，它使我们可以访问诸如内存映射，文件加锁机制以及文件间快速数据传递等操作系统特性。我们可以通过调用getChannel()方法获取通道，这个方法已经添加到了FileInputStream,FileOutputStream和RandomAccessFile类中：   
+```$xslt
+    FileInputStream in = new FileInputStream(filePath);
+    FileChannel channel = in.getChannel();
+```    
 [com.lyf.nio.demo1.ChannelTest](https://github.com/lyfZhixing/javaExplore/blob/master/NIO/src/main/java/com/lyf/nio/demo1/ChannelTest.java)主要是根据api写了一些测试用例：
 1. `bufferTest()`：缓冲区的分配和常用属性——position、limit、capacity
 2. `testCopy()`：基本的复制文件，其主要的元素包括：
