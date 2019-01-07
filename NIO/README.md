@@ -1,4 +1,10 @@
 # NIO 学习
+自java1.4以来，java引入了大量用于改进输入/输出的处理机制，位于java.nio包中，即NIO。    
+有以下新特性：   
+1. 字符集编码器和解码器
+2. 非阻塞的I/O
+3. 内存映射文件([com.lyf.nio.demo1.ChannelTest](https://github.com/lyfZhixing/javaExplore/blob/master/NIO/src/main/java/com/lyf/nio/demo1/ChannelTest.java) .testMapCopy())
+4. 文件加锁机制
 ## channel 
 [com.lyf.nio.demo1.ChannelTest](https://github.com/lyfZhixing/javaExplore/blob/master/NIO/src/main/java/com/lyf/nio/demo1/ChannelTest.java)主要是根据api写了一些测试用例：
 1. `bufferTest()`：缓冲区的分配和常用属性——position、limit、capacity
